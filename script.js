@@ -11,7 +11,7 @@ fetch(apiUrl)
   .then(data => {
     // Proses data yang diterima di sini
     console.log('Data berhasil diterima:', data);
-    dataContainer.innerHTML = `<pre>${JSON.stringify(data.data, null, 2)}</pre>`; // Menampilkan data dalam format JSON yang rapi
+    dataContainer.innerHTML = `<pre>${JSON.stringify(data.data[0], null, 2)}</pre>`; // Menampilkan data dalam format JSON yang rapi
   })
   .catch(error => {
     console.error('Gagal mengambil data:', error);
