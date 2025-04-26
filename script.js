@@ -19,8 +19,9 @@ function fetchData() {
       <p> Insert by: ${JSON.stringify(data.data[0]['insert_by'], null, 2)}</p> 
       <p> Approve by: ${JSON.stringify(data.data[0]['approve_by'], null, 2)}</p> 
       <p> Provinsi: ${JSON.stringify(data.data[0]['provinsi'], null, 2)}</p> 
-      <p> Jumlah Ormas ber SKT: ${JSON.stringify(data.data[0]['jumlah_ormas_ber_skt'], null, 2)}</p> 
-      <p> Jumlah Ormas berbadah hukum: ${JSON.stringify(data.data[0]['jumlah_ormas_berbadan_hukum'], null, 2)}</p>
+      <hr>
+      <p> Ormas ber SKT: ${JSON.stringify(data.data[0]['jumlah_ormas_ber_skt'], null, 2)}</p> 
+      <p> Ormas berbadah hukum: <br><h2>${JSON.stringify(data.data[0]['jumlah_ormas_berbadan_hukum'], null, 2)}</h2></p>
       `;
     })
     .catch(error => {
